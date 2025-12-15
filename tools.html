@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online document conversion tools - Convert PDF, Word, Excel, PowerPoint, images and more with our professional conversion suite.">
+    <meta name="keywords" content="document converter, PDF converter, Word converter, Excel converter, PowerPoint converter, image converter, online tools, file conversion">
+    <meta name="author" content="Next Generation Studio Global">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Professional Document Conversion Tools">
+    <meta property="og:description" content="Convert your documents instantly with our free online conversion tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nextgenerationstudioglobal.com/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Document Conversion Tools">
+    <meta name="twitter:description" content="Convert your documents instantly with our free online conversion tools.">
+    <title>Professional Document Conversion Tools | Next Generation Studio</title>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+     crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .logo:hover {
+            color: #00aaff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* AdSense Banner */
+        .ad-banner {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            text-align: center;
+            min-height: 90px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+            border-bottom: 3px solid #00aaff;
+            padding-bottom: 20px;
+        }
+
+        /* Tools Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .tool-card {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .tool-card:hover {
+            border-color: #00aaff;
+            box-shadow: 0 8px 25px rgba(0, 170, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .tool-card h3 {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .tool-card p {
+            color: #666666;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .tool-features {
+            text-align: left;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #555555;
+        }
+
+        .tool-features li {
+            margin-bottom: 8px;
+            list-style-position: inside;
+        }
+
+        .tool-btn {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #ffffff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tool-btn:hover {
+            background: linear-gradient(135deg, #00aaff, #0088cc);
+            box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+        }
+
+        /* Category Section */
+        .category-section {
+            margin: 60px 0;
+        }
+
+        .category-header {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid #00aaff;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .category-header h2 {
+            color: #1a1a1a;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .category-header p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        /* Middle AdSense */
+        .ad-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            text-align: center;
+            min-height: 100px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #f9f9f9, #ffffff);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .benefits h3 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .benefits ul {
+            list-style-position: inside;
+            color: #666666;
+        }
+
+        .benefits li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #00aaff;
+        }
+
+        .footer-section a {
+            color: #cccccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+            font-size: 13px;
+        }
+
+        .footer-section a:hover {
+            color: #00aaff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444444;
+            padding-top: 20px;
+            text-align: center;
+            color: #999999;
+            font-size: 12px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .breadcrumb a {
+            color: #00aaff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .tool-card {
+                padding: 20px;
+            }
+        }
+
+        .highlight {
+            background: #fffacd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">🛠️ TOOLWEB</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/tools.html">Tools</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <a href="/">Home</a> / Tools
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Professional Document Conversion Tools</h1>
+        <p>Convert your documents instantly with our free online conversion suite. Fast, secure, and easy-to-use tools for all your file conversion needs.</p>
+    </section>
+
+    <!-- Top AdSense Banner -->
+    <div class="ad-banner">
+        <!-- AdSense Ad Code Here -->
+        <p style="color: #999; font-size: 12px;">Advertisement</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- PDF Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>PDF Conversion Tools</h2>
+                <p>Convert to and from PDF format with professional quality</p>
+            </div>
+
+            <div class="tools-grid">
+                <!-- PDF to Word -->
+                <div class="tool-card">
+                    <div class="tool-icon">📄</div>
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDF documents to editable Word (.docx) format instantly while maintaining formatting and layout.</p>
+                    <ul class="tool-features">
+                        <li>✓ Preserves original formatting</li>
+                        <li>✓ Batch conversion support</li>
+                        <li>✓ High accuracy OCR</li>
+                        <li>✓ Secure processing</li>
+                    </ul>
+                    <a href="/tools/pdf-to-word.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- Word to PDF -->
+                <div class="tool-card">
+                    <div class="tool-icon">📋</div>
+                    <h3>Word to PDF</h3>
+                    <p>Transform your Word documents into professional PDF files with perfect formatting and protection options.</p>
+                    <ul class="tool-features">
+                        <li>✓ One-click conversion</li>
+                        <li>✓ Password protection</li>
+                        <li>✓ Multiple format support</li>
+                        <li>✓ No watermarks</li>
+                    </ul>
+                    <a href="/tools/word-to-pdf.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PDF to Image -->
+                <div class="tool-card">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>PDF to Image</h3>
+                    <p>Extract and convert PDF pages into high-quality image files (PNG, JPG, BMP) for easy sharing.</p>
+                    <ul class="tool-features">
+                        <li>✓ Multiple format export</li>
+                        <li>✓ Adjustable quality</li>
+                        <li>✓ Page selection</li>
+                        <li>✓ Batch processing</li>
+                    </ul>
+                    <a href="/tools/pdf-to-image.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- Image to PDF -->
+                <div class="tool-card">
+                    <div class="tool-icon">🌅</div>
+                    <h3>Image to PDF</h3>
+                    <p>Combine multiple images into a single PDF document with custom sizing and arrangement options.</p>
+                    <ul class="tool-features">
+                        <li>✓ Combine multiple images</li>
+                        <li>✓ Custom page size</li>
+                        <li>✓ Drag & drop support</li>
+                        <li>✓ Instant conversion</li>
+                    </ul>
+                    <a href="/tools/image-to-pdf.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PDF Merger -->
+                <div class="tool-card">
+                    <div class="tool-icon">🔗</div>
+                    <h3>PDF Merger</h3>
+                    <p>Combine multiple PDF files into one document with flexible arrangement and organization options.</p>
+                    <ul class="tool-features">
+                        <li>✓ Merge unlimited PDFs</li>
+                        <li>✓ Reorder pages easily</li>
+                        <li>✓ Remove unwanted pages</li>
+                        <li>✓ Fast processing</li>
+                    </ul>
+                    <a href="/tools/pdf-merger.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PDF Splitter -->
+                <div class="tool-card">
+                    <div class="tool-icon">✂️</div>
+                    <h3>PDF Splitter</h3>
+                    <p>Extract specific pages from PDF documents or split them into separate files with precision control.</p>
+                    <ul class="tool-features">
+                        <li>✓ Extract specific pages</li>
+                        <li>✓ Split by range</li>
+                        <li>✓ Keep original quality</li>
+                        <li>✓ Batch splitting</li>
+                    </ul>
+                    <a href="/tools/pdf-splitter.html" class="tool-btn">Open Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle AdSense Section -->
+        <div class="ad-section">
+            <p style="color: #999; font-size: 12px;">Advertisement Space</p>
+        </div>
+
+        <!-- Office Document Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Office Document Conversion</h2>
+                <p>Convert between Word, Excel, PowerPoint, and other office formats seamlessly</p>
+            </div>
+
+            <div class="tools-grid">
+                <!-- Excel to PDF -->
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>Excel to PDF</h3>
+                    <p>Convert spreadsheets to PDF format with preserved formatting, charts, and formulas visualization.</p>
+                    <ul class="tool-features">
+                        <li>✓ Preserve charts & graphs</li>
+                        <li>✓ Maintain cell formatting</li>
+                        <li>✓ Page layout options</li>
+                        <li>✓ Fast batch conversion</li>
+                    </ul>
+                    <a href="/tools/excel-to-pdf.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PowerPoint to PDF -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎥</div>
+                    <h3>PowerPoint to PDF</h3>
+                    <p>Transform presentations into portable PDF documents perfect for sharing and archiving.</p>
+                    <ul class="tool-features">
+                        <li>✓ All slides included</li>
+                        <li>✓ Maintain animations note</li>
+                        <li>✓ High resolution output</li>
+                        <li>✓ Instant processing</li>
+                    </ul>
+                    <a href="/tools/ppt-to-pdf.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- Excel to Word -->
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3>Excel to Word</h3>
+                    <p>Convert spreadsheet data into formatted Word documents with editable table structures.</p>
+                    <ul class="tool-features">
+                        <li>✓ Table preservation</li>
+                        <li>✓ Data formatting retained</li>
+                        <li>✓ Editable output</li>
+                        <li>✓ Multiple sheet support</li>
+                    </ul>
+                    <a href="/tools/excel-to-word.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PowerPoint to Word -->
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3>PowerPoint to Word</h3>
+                    <p>Extract slide content into Word documents for easy editing and documentation purposes.</p>
+                    <ul class="tool-features">
+                        <li>✓ Extract all content</li>
+                        <li>✓ Image preservation</li>
+                        <li>✓ Editable format</li>
+                        <li>✓ Layout options</li>
+                    </ul>
+                    <a href="/tools/ppt-to-word.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- CSV to Excel -->
+                <div class="tool-card">
+                    <div class="tool-icon">📈</div>
+                    <h3>CSV to Excel</h3>
+                    <p>Convert comma-separated values into properly formatted Excel spreadsheets with data preservation.</p>
+                    <ul class="tool-features">
+                        <li>✓ Automatic formatting</li>
+                        <li>✓ Data type detection</li>
+                        <li>✓ Batch processing</li>
+                        <li>✓ Unicode support</li>
+                    </ul>
+                    <a href="/tools/csv-to-excel.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- DOCX to DOC -->
+                <div class="tool-card">
+                    <div class="tool-icon">💾</div>
+                    <h3>DOCX to DOC</h3>
+                    <p>Convert modern Word format to legacy DOC format for compatibility with older applications.</p>
+                    <ul class="tool-features">
+                        <li>✓ Format compatibility</li>
+                        <li>✓ Content preservation</li>
+                        <li>✓ One-click conversion</li>
+                        <li>✓ No data loss</li>
+                    </ul>
+                    <a href="/tools/docx-to-doc.html" class="tool-btn">Open Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Conversion Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Image Conversion Tools</h2>
+                <p>Convert between various image formats with professional quality and optimization</p>
+            </div>
+
+            <div class="tools-grid">
+                <!-- JPG to PNG -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎨</div>
+                    <h3>JPG to PNG</h3>
+                    <p>Convert JPEG images to PNG format with transparency support and lossless quality.</p>
+                    <ul class="tool-features">
+                        <li>✓ Lossless conversion</li>
+                        <li>✓ Transparency support</li>
+                        <li>✓ Quality optimization</li>
+                        <li>✓ Batch processing</li>
+                    </ul>
+                    <a href="/tools/jpg-to-png.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- PNG to JPG -->
+                <div class="tool-card">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>PNG to JPG</h3>
+                    <p>Convert PNG images to JPEG format with size optimization and quality control.</p>
+                    <ul class="tool-features">
+                        <li>✓ File size reduction</li>
+                        <li>✓ Quality settings</li>
+                        <li>✓ Instant conversion</li>
+                        <li>✓ Batch support</li>
+                    </ul>
+                    <a href="/tools/png-to-jpg.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- WebP Converter -->
+                <div class="tool-card">
+                    <div class="tool-icon">🌐</div>
+                    <h3>WebP Converter</h3>
+                    <p>Convert images to modern WebP format for faster web loading and better compression.</p>
+                    <ul class="tool-features">
+                        <li>✓ Superior compression</li>
+                        <li>✓ Web optimized</li>
+                        <li>✓ Quality preservation</li>
+                        <li>✓ Multiple format input</li>
+                    </ul>
+                    <a href="/tools/webp-converter.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- SVG Converter -->
+                <div class="tool-card">
+                    <div class="tool-icon">⚡</div>
+                    <h3>SVG Converter</h3>
+                    <p>Convert raster images to scalable SVG vector format for infinite scaling without quality loss.</p>
+                    <ul class="tool-features">
+                        <li>✓ Vector conversion</li>
+                        <li>✓ Scalable output</li>
+                        <li>✓ Quality preservation</li>
+                        <li>✓ Customizable settings</li>
+                    </ul>
+                    <a href="/tools/svg-converter.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- ICO Creator -->
+                <div class="tool-card">
+                    <div class="tool-icon">🔹</div>
+                    <h3>ICO Creator</h3>
+                    <p>Create favicon and icon files from images with multiple size options and formats.</p>
+                    <ul class="tool-features">
+                        <li>✓ Multiple icon sizes</li>
+                        <li>✓ Favicon generation</li>
+                        <li>✓ Transparency support</li>
+                        <li>✓ Quick conversion</li>
+                    </ul>
+                    <a href="/tools/ico-creator.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- HEIC Converter -->
+                <div class="tool-card">
+                    <div class="tool-icon">📱</div>
+                    <h3>HEIC to JPG</h3>
+                    <p>Convert modern HEIC format from Apple devices to universal JPG format.</p>
+                    <ul class="tool-features">
+                        <li>✓ Apple device support</li>
+                        <li>✓ Quality maintained</li>
+                        <li>✓ Batch conversion</li>
+                        <li>✓ Universal format</li>
+                    </ul>
+                    <a href="/tools/heic-to-jpg.html" class="tool-btn">Open Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Sidebar Section -->
+        <div class="ad-section">
+            <p style="color: #999; font-size: 12px;">Advertisement Space</p>
+        </div>
+
+        <!-- Video & Media Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Video & Media Conversion</h2>
+                <p>Convert video, audio, and multimedia files with professional quality</p>
+            </div>
+
+            <div class="tools-grid">
+                <!-- Video to GIF -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎬</div>
+                    <h3>Video to GIF</h3>
+                    <p>Convert video files into animated GIF format perfect for social media and web sharing.</p>
+                    <ul class="tool-features">
+                        <li>✓ Multiple format support</li>
+                        <li>✓ Frame rate control</li>
+                        <li>✓ Size optimization</li>
+                        <li>✓ Instant conversion</li>
+                    </ul>
+                    <a href="/tools/video-to-gif.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- Audio Converter -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎵</div>
+                    <h3>Audio Converter</h3>
+                    <p>Convert between audio formats (MP3, WAV, AAC, FLAC) with quality settings.</p>
+                    <ul class="tool-features">
+                        <li>✓ Multiple audio formats</li>
+                        <li>✓ Bitrate control</li>
+                        <li>✓ Metadata support</li>
+                        <li>✓ Batch conversion</li>
+                    </ul>
+                    <a href="/tools/audio-converter.html" class="tool-btn">Open Tool →</a>
+                </div>
+
+                <!-- MP4 Converter -->
+                <div class="tool-card">
+                    <div class="tool-icon">📹</div>
+                    <h3>MP4 Converter</h3>
+                    <p>Convert various video formats to MP4 with universal device compatibility.</p>
+                    <ul class="tool-features">
+                        <li>✓ Universal format</li>
+                        <li>✓ Device compatible</li>
+                        <li>✓ Resolution options</li>
+                        <li>✓ Fast processing</li>
+                    </ul>
+                    <a href="/tools/mp4-converter.html" class="tool-btn">Open Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h3>Why Choose Our Conversion Tools?</h3>
+            <ul>
+                <li><span class="highlight">Fast & Reliable</span> - Convert documents in seconds with 99.9% accuracy</li>
+                <li><span class="highlight">Secure & Private</span> - Your files are encrypted and automatically deleted after conversion</li>
+                <li><span class="highlight">No Installation Required</span> - Works directly in your web browser</li>
+                <li><span class="highlight">Unlimited Conversions</span> - Convert as many files as you need, completely free</li>
+                <li><span class="highlight">Batch Processing</span> - Convert multiple files at once to save time</li>
+                <li><span class="highlight">Professional Quality</span> - Maintain formatting and quality in every conversion</li>
+                <li><span class="highlight">Device Compatible</span> - Use on desktop, tablet, or mobile devices</li>
+                <li><span class="highlight">No Watermarks</span> - Your converted files are clean and professional</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Bottom AdSense -->
+    <div class="ad-banner">
+        <p style="color: #999; font-size: 12px;">Advertisement</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Tools</h4>
+                <a href="/tools/pdf-to-word.html">PDF to Word</a>
+                <a href="/tools/word-to-pdf.html">Word to PDF</a>
+                <a href="/tools/pdf-merger.html">PDF Merger</a>
+                <a href="/tools/image-to-pdf.html">Image to PDF</a>
+            </div>
+            <div class="footer-section">
+                <h4>Conversion</h4>
+                <a href="/tools/excel-to-pdf.html">Excel to PDF</a>
+                <a href="/tools/ppt-to-pdf.html">PowerPoint to PDF</a>
+                <a href="/tools/jpg-to-png.html">JPG to PNG</a>
+                <a href="/tools/png-to-jpg.html">PNG to JPG</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="/about.html">About Us</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="/faq.html">FAQ</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/community.html">Community</a>
+                <a href="/feedback.html">Send Feedback</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Next Generation Studio Global. All rights reserved. | <a href="/sitemap.xml">Sitemap</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // AdSense automatic ad placement
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Track page view for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_path': '/tools.html'
+            });
+        }
+    </script>
+</body>
+</html>
